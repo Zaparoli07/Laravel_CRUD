@@ -6,18 +6,21 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                	Informe abaixo
-                	<a class="float-right" href="{{url('contatos')}}">Listagem de Clientes</a>
+                	Informações do Contato
+                	<a class="float-right" href="{{url('contatos')}}">Listagem de Contatos</a>
                 </div>
+                <div class="panel-body">
+                    {{ Form::open() }}
+                        
+                        {!! Form::input('text', 'nome', '',['class' => 'form-control', 'autofocus', 'placeholder' => 'Nome']) !!}
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                        {!! Form::input('text', 'nome', '',['class' => 'form-control', 'autofocus', 'placeholder' => 'E-mail']) !!}
 
-                    Formulário
+                        {!! Form::input('text', 'nome', '',['class' => 'form-control', 'autofocus', 'placeholder' => 'Nome']) !!}
+
+                        {!! Form::input('text', 'nome', '',['class' => 'form-control', 'autofocus', 'placeholder' => 'Nome']) !!}
+
+                    {{ Form::close() }}
                 </div>
             </div>
         </div>
