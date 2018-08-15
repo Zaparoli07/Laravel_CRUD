@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-">
             <div class="card">
                 <div class="card-header">
                 	Dashboard
@@ -11,13 +11,34 @@
                 </div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <table class="table">
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Facebook</th>
+                        <th>LinkedIn</th>
+                        <th>Celular</th>
+                        <th>Telefone Comercial</th>
+                        <th>Telefone Residencial</th>
+                        <th>Ações</th>
+                        <tbody>
+                            @foreach($contatos as $contato)
+                            <tr>
+                                <td>{{ $contato->nome }}</td>
+                                <td>{{ $contato->email }}</td>
+                                <td>{{ $contato->facebook }}</td>
+                                <td>{{ $contato->linkedin }}</td>
+                                <td>{{ $contato->telefone_celular }}</td>
+                                <td>{{ $contato->telefone_comercial }}</td>
+                                <td>{{ $contato->telefone_residencial }}</td>
+                                <td>
+                                    <a href="contatos/{{ $contato->id }}/editar" class="btn btn-primary btn-sm">Editar</a>
+                                    <a href="contatos/{{ $contato->id }}/editar" class="btn btn-danger btn-sm">Excluir</a>
+                                </td>
+                            </tr>
 
-                    Listagem de Contatos
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

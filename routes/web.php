@@ -23,4 +23,14 @@ Route::get('/contatos', 'ContatosController@index')->name('contatos');
 
 Route::get('/contatos/novo', 'ContatosController@novo')->name('contatos');
 
+Route::post('/contatos/salvar', 'ContatosController@salvar')->name('contatos');
+
+Route::get('/contatos/{contato}/editar', 'ContatosController@editar');
+
+Route::patch('/contatos/{contato}', 'ContatosController@atualizar');
+
+
+
+
+
 
