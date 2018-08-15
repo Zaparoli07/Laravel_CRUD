@@ -29,6 +29,8 @@ Route::get('/contatos/{contato}/editar', 'ContatosController@editar');
 
 Route::patch('/contatos/{contato}', 'ContatosController@atualizar');
 
+Route::delete('/contatos/{contato}', 'ContatosController@deletar');
+
 
 
 

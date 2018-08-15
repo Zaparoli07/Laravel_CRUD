@@ -53,4 +53,16 @@ class ContatosController extends Controller
  	 	return Redirect::to('contatos/'.$contato->id.'/editar');
 
  	}
+
+ 	public function deletar($id){
+
+ 		$contato = Contatos::findOrFail($id);
+
+ 		$contato->delete();
+
+ 		\Session::flash('Sucesso', 'Deletado com Sucesso!');
+
+ 		return Redirect::to('contatos/');
+ 	 	
+ 	}
 }

@@ -11,6 +11,11 @@
                 </div>
 
                 <div class="card-body">
+
+                    @if(Session::has('Sucesso'))
+                        <div class="alert alert-success">{{ Session::get('Sucesso') }}</div>
+                    @endif
+
                     <table class="table">
                         <th>Nome</th>
                         <th>Email</th>
@@ -25,14 +30,16 @@
                             <tr>
                                 <td>{{ $contato->nome }}</td>
                                 <td>{{ $contato->email }}</td>
-                                <td>{{ $contato->facebook }}</td>
-                                <td>{{ $contato->linkedin }}</td>
+                                <td><a href="{{ $contato->facebook }}" target="_blank">Facebook</a></td>
+                                <td><a href="{{ $contato->linkedin }}" target="_blank">LinkedIn</a></td>
                                 <td>{{ $contato->telefone_celular }}</td>
                                 <td>{{ $contato->telefone_comercial }}</td>
                                 <td>{{ $contato->telefone_residencial }}</td>
                                 <td>
                                     <a href="contatos/{{ $contato->id }}/editar" class="btn btn-primary btn-sm">Editar</a>
-                                    <a href="contatos/{{ $contato->id }}/editar" class="btn btn-danger btn-sm">Excluir</a>
+                                    {!! Form::open(['method' => 'DELETE', 'url' => '/contatos/'.$contato->id, 'style' => 'display: inline;']) !!}
+                                    <button type="submit" class="btn btn-danger btn-sm">Excluir</a>
+                                    {!! Form::close() !!}
                                 </td>
                             </tr>
 

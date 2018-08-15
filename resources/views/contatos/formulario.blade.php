@@ -19,7 +19,7 @@
                     @if(Request::is('*/editar'))
                         {!! Form::model($contato, ['method' => 'PATCH', 'url' => 'contatos/'.$contato->id]) !!}
                     @else
-                        {!! Form::open(['url' => 'clientes/salvar']) !!}
+                        {!! Form::open(['url' => 'contatos/salvar']) !!}
                     @endif
 
                     {!! Form::open(['url' => 'contatos/salvar']) !!}
