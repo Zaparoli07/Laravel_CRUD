@@ -26,11 +26,11 @@
                         
                         {!! Form::label('nome', 'Nome', ['class' => 'font-weight-bold']) !!}
 
-                        {!! Form::input('text', 'nome', null,['class' => 'form-control', 'autofocus', 'placeholder' => 'Nome']) !!}
+                        {!! Form::input('text', 'nome', null, ['class' => 'form-control', 'autofocus', 'placeholder' => 'Nome', 'required']) !!}
 
                         {!! Form::label('email', 'E-mail', ['class' => 'font-weight-bold']) !!}
 
-                        {!! Form::input('text', 'email', null,['class' => 'form-control', '', 'placeholder' => 'E-mail']) !!}
+                        {!! Form::input('email', 'email', null,['class' => 'form-control', '', 'placeholder' => 'E-mail', 'required']) !!}
 
                         {!! Form::label('facebook', 'Facebook', ['class' => 'font-weight-bold']) !!}
 

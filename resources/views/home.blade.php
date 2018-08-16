@@ -5,7 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Dashboard
+                    <a class="float-right" href="{{ url('/contatos') }}">Contatos</a>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +16,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <center>Bem-Vindo(a)</center>
                 </div>
             </div>
         </div>

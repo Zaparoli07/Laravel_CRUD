@@ -30,8 +30,8 @@
                             <tr>
                                 <td>{{ $contato->nome }}</td>
                                 <td>{{ $contato->email }}</td>
-                                <td><a href="{{ $contato->facebook }}" target="_blank">Facebook</a></td>
-                                <td><a href="{{ $contato->linkedin }}" target="_blank">LinkedIn</a></td>
+                                <td><a href="http://{{ $contato -> facebook }}" target="_blank">Facebook</a></td>
+                                <td><a href="http://{{ $contato -> linkedin }}" target="_blank">LinkedIn</a></td>
                                 <td>{{ $contato->telefone_celular }}</td>
                                 <td>{{ $contato->telefone_comercial }}</td>
                                 <td>{{ $contato->telefone_residencial }}</td>

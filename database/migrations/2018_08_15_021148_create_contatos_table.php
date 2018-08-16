@@ -14,7 +14,7 @@ class CreateContatosTable extends Migration
     public function up()
     {
         Schema::create('contatos', function (Blueprint $table) {
-            $table->increments('id')->primary();
+            $table->increments('id');
             $table->string('nome', 60);
             $table->string('email', 60);
             $table->string('facebook');
@@ -22,6 +22,7 @@ class CreateContatosTable extends Migration
             $table->string('telefone_celular');
             $table->string('telefone_comercial');
             $table->string('telefone_residencial');
+            $table->timestamps();
         });
     }
 
