@@ -17,11 +17,11 @@ class CreateContatosTable extends Migration
             $table->increments('id');
             $table->string('nome', 60);
             $table->string('email', 60);
-            $table->string('facebook');
-            $table->string('linkedin');
-            $table->string('telefone_celular');
-            $table->string('telefone_comercial');
-            $table->string('telefone_residencial');
+            $table->string('facebook')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('telefone_celular')->nullable();
+            $table->string('telefone_comercial')->nullable();
+            $table->string('telefone_residencial'->nullable());
             $table->timestamps();
         });
     }
