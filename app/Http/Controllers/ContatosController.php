@@ -95,7 +95,7 @@ class ContatosController extends Controller
 		$Mailer -> Port = 465;
 
 		//E-mail Remetente
-		$Mailer -> From = $email;
+		$Mailer -> From = 'luizzaparoli07@gmail.com';
 
 		//Nome do Remetente
 		$Mailer -> FromName = 'Luiz Zaparoli';
@@ -110,7 +110,7 @@ class ContatosController extends Controller
 		$Mailer -> AltBody = 'Conteúdo do E-mail em Text';
 
 		//Destinatário
-		$Mailer -> addAddress('luizzaparoli07@gmail.com');
+		$Mailer -> addAddress($email);
 
 		if($Mailer -> Send()){
 
