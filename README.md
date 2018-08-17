@@ -52,7 +52,7 @@ php -r "unlink('composer-setup.php');"
 
 ## Meta
 
-Luiz Zaparoli – [@LuizZaparoli](www.linkedin.com/in/luiz-zaparoli) – luizzaparoli07@gmail.com
+Luiz Zaparoli – (www.linkedin.com/in/luiz-zaparoli) – luizzaparoli07@gmail.com
 
 [https://github.com/Zaparoli07](https://github.com/Zaparoli07/)
 
