@@ -3,11 +3,11 @@
 
 ![PHP Version][php-image]
 
-Login utilizando Laravel.
+Login com Laravel.
 
-Cadastro de Contatos.
+CRUD.
 
-PHP Mailer
+PHP Mailer.
 
 ## Instalação
 
