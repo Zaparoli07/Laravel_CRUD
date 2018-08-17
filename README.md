@@ -1,77 +1,68 @@
-# Nome do produto
-> Descrição curta sobre o que seu projeto faz.
+# Projeto Tray
+> Projeto desenvolvido para a empresa Tray, referente à vaga de Programador PHP I.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+![PHP Version][php-image]
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Login utilizando Laravel.
 
-![](../header.png)
+Cadastro de Contatos.
+
+PHP Mailer
 
 ## Instalação
 
 OS X & Linux:
 
+Inicializar Banco de Dados:
+
 ```sh
-npm install my-crazy-module --save
+php artisan migrate
+```
+
+Inicializar o Servidor:
+```sh
+php artisan serve
 ```
 
 Windows:
 
+Inicializar Banco de Dados:
+
 ```sh
-edit autoexec.bat
+php artisan migrate
 ```
 
-## Exemplo de uso
-
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
-
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
+Inicializar o Servidor:
+```sh
+php artisan serve
+```
 
 ## Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+Dependências:
+
+Composer
 
 ```sh
-make install
-npm test
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 ```
-
-## Histórico de lançamentos
-
-* 0.2.1
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1
-    * Trabalho em andamento
 
 ## Meta
 
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
+Luiz Zaparoli – [@LuizZaparoli](www.linkedin.com/in/luiz-zaparoli) – luizzaparoli07@gmail.com
 
-Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
-
-[https://github.com/yourname/github-link](https://github.com/othonalberto/)
+[https://github.com/Zaparoli07](https://github.com/Zaparoli07/)
 
 ## Contributing
 
-1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+1. Faça o _fork_ do projeto (<https://github.com/Zaparoli07/Laravel_CRUD>)
 2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
 
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/seunome/seuprojeto/wiki
+[php-image]: https://img.shields.io/packagist/php-v/symfony/symfony.svg
+
